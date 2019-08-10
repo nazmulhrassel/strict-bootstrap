@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+ nav.bg-light {
+    background-color: #f8f9fa;
+    
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(14, 12, 12, 0.89);
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 15px;
+ }   
+
+ .navbar-light .navbar-brand {
+    color: rgba(0,0,0,.9);
+    width: 100px;
+    
+}
+
+.banner-section{
+    
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.vh-100{
+    min-height: 100vh;
+    
+}
+.container{}
+.banner-content{
+    
+padding-top: 80px;
+}
+.banner-content h1{
+    font-size: 5em;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+}
+.banner-content hr{
+    background-color: #15A4FA;
+}
+.banner-content p{
+    font-size: 16px;
+    text-transform: initial;
+    font-weight: 400;
+    text-decoration: none;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}/*
+.banner-content button{
+    text-decoration: none;
+    color: white;
+    border: 1px solid #15a4fa;
+    padding: 10px 25px;
+    border-radius: 4px;
+    background: #15a4fa;
+    font-size: 18px;
+}*/
+.banner-content a i{
+    font-size: 25px;
+    font-weight: 900;
+    margin-top: 87px;
+    text-decoration: none;
+    color: #15a4fa;
+}
+
+.about-section{
+    background-color: #e7efef;
+}
+.about-content{}
+.about-content h1{}
+.about-content p{}
+
+.service-section
+{
+    background: #e7efef;
+}
+.service-section .container .box{
+    position: relative;
+    margin-bottom: 30px;
+    background: #15A4FA;  
+    overflow: hidden;
+    
+
+}
+.service-section .container .box .imgBox{
+    position: relative;
+    overflow: hidden;
+}
+
+.service-section .container .box .imgBox img{
+    max-width: 100%;
+    display: block;
+    transition: transform .5s;
+}
+.service-section .container .box:hover .imgBox img
+{
+    transform: scale(2,2);    
+}
+
+.service-section .container .box .details
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(21, 164, 250, 0.44);
+    transform: scaleY(0);
+    transition: transform .5s;
+}
+.service-section .container .box:hover .details
+{
+    transform: scaleY(1);
+}
+.service-section .container .box .details .img-content
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+.service-section .container .box .details .img-content h2
+{
+    font-size: 20px;
+    color: #FF5722;
+    margin: 0;
+    padding-bottom: 5px;
+}
+.service-section .container .box .details .img-content p
+{
+    
+    margin: 10px, 0 0;
+    padding: 0;
+    color: #000;
+}
+
+.contact-section
+{
+
+background-image: url(../images/formbg.png);
+
+background-size: cover;
+
+background-repeat: no-repeat;
+
+background-blend-mode: multiply;
+}
+.contact-section h1
+{
+
+font-size: 45px;
+
+font-weight: 700;
+
+text-transform: capitalize;
+
+color: #fff;
+
+padding-bottom: 15px;
+}
+.contact-section p
+{
+    
+font-size: 20px;
+    
+font-weight: 400;
+    
+color: #908a8ac9;
+    
+padding-bottom: 50px;
+}
+
+.contact-section form{
+}
+
+form .full-name{}
+form .email{
+}
+form .message{}
+
+form .form-check input{padding-right: 5px;}
+form .form-check{
+    width: 50%;
+    font-size: 16px;
+    color: #908a8ac9;
+    padding: 10px 0;
+}
+form .form-check .form-check-label{
+}
+form .button{
+    width: 50%;
+    margin-left: 266px;
+    margin-bottom: 101px;
+    background: transparent;
+}
+
+form .full-name .form-control{
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #908a8ac9;
+    background: transparent;
+}
+form .email .form-control{
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #908a8ac9;
+    background: transparent;
+}
+form .message .form-control{
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #908a8ac9;
+    background: transparent;
+}
+.submit-section
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    overflow: hidden;
+}
+.submit-section button{
+    width: 50%;
+    float: right;
+    padding: 10px 0;
+}
+
+
+nav p{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.footer-social{padding: 1rem;}
+.footer-social ul{
+}
+.footer-social ul li{padding: 10px;background: #15A4FA;transition: .6s; border: 1px solid #15a4fa;border-radius: 4px;justify-content: left;display: inline-block;}
+.footer-social ul li a i{
+    font-size: 20px;
+    z-index: 1; 
+}
+.footer-social ul li a{
+    color: #fff;
+    padding: 5px;
+    font-size: 18px;
+    align-items: center;
+}
+
+    
+}
+.footer-social ul li a.facebook{}
+
+.footer-social ul li a.facebook:hover{
+    color: #3b5a9a;
+    
+}
+.footer-social ul li a.twitter:hover{
+    color: #11465a;
+}
+.footer-social ul li a.insta:hover{
+    color: #e44a40;
+    
+}
+.footer-social ul li a.youtube:hover{
+    color: #ef2a1c;
+    
+}
